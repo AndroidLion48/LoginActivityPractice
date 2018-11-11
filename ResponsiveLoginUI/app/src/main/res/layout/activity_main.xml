@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:weightSum="2">
+
+       <!-- Weight 1 -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:background="@color/colorPrimaryDark">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/welcome_message"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+               android:textColor="@android:color/white"
+               android:textStyle="bold"
+               android:drawableStart="@drawable/ic_graphic_eq_purple_24dp"
+               android:drawablePadding="10dp"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:layout_marginTop="@dimen/margin_short"
+               android:layout_marginBottom="@dimen/margin_default"
+               android:layout_marginStart="@dimen/margin_default"
+               android:layout_marginEnd="@dimen/margin_default"
+               android:background="@android:color/white"
+               android:padding="@dimen/margin_default" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/margin_default"
+               android:gravity="center"
+               android:padding="@dimen/margin_short"
+               android:text="@string/app_desc"
+               android:textColor="@android:color/white"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/margin_short"
+               android:padding="@dimen/margin_short"
+               android:weightSum="2"
+               android:orientation="horizontal"
+               style="?android:attr/buttonBarStyle">
+
+               <Button
+                   android:id="@+id/learn_more_btn"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/margin_short"
+                   android:layout_weight="1"
+                   style="?android:attr/buttonBarButtonStyle"
+                   android:text="@string/learn_more"
+                   android:background="@drawable/button_rounded"
+                   android:backgroundTint="@android:color/white"/>
+
+               <Button
+                   android:id="@+id/sign_up_btn"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/margin_short"
+                   android:layout_weight="1"
+                   android:text="@string/learn_more_button"
+                   style="?android:attr/buttonBarButtonStyle"
+                   android:background="@drawable/button_rounded"
+                   android:backgroundTint="@android:color/white"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <!-- Weight 1 -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:layout_margin="@dimen/margin_default"
+           android:padding="@dimen/margin_short">
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/email_et"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/input_email"
+                   android:inputType="textEmailAddress"
+                   android:paddingBottom="16dp" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/margin_short"
+               app:passwordToggleEnabled="true">
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/password_et"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/input_password_hint"
+                   android:inputType="textEmailAddress"
+                   android:paddingBottom="16dp" />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_margin="@dimen/margin_short"
+               android:weightSum="2">
+
+               <TextView
+                   android:id="@+id/forgot_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_margin="@dimen/margin_short"
+                   android:text="@string/forgot_password"
+                   android:textColor="@color/colorAccent"
+                   android:textSize="14sp"
+                   android:textStyle="bold"/>
+
+               <Button
+                   android:id="@+id/login_btn"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_margin="@dimen/margin_short"
+                   android:background="@drawable/button_rounded"
+                   android:text="@string/login_button"
+                   android:textColor="@android:color/white"/>
+
+
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+</ScrollView>
