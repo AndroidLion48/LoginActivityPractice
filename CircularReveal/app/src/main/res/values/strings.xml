@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AnimateButton</string>
+    <string name="sign_in">Sign IN</string>
+    <string name="you_are_now_logged_in">You are now Logged In.</string>
+    <string name="hi_tc2r">Hi Tc2r</string>
+</resources>
