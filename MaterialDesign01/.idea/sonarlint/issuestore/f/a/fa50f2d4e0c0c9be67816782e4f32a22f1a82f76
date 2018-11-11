@@ -1,0 +1,7 @@
+
+"squid:ClassVariableVisibilityCheck"SMake emailET a static final constant or non-public and provide accessors if needed.(ÄÉ 
+‚"squid:ClassVariableVisibilityCheck"VMake passwordET a static final constant or non-public and provide accessors if needed.(ÛÈ¤°
+„"squid:ClassVariableVisibilityCheck"SMake termsCB a static final constant or non-public and provide accessors if needed.(¡ö˜§ÿÿÿÿÿ
+‰"squid:ClassVariableVisibilityCheck"XMake signInButton a static final constant or non-public and provide accessors if needed.(®¬Óüÿÿÿÿ
+~"squid:ClassVariableVisibilityCheck"SMake toolbar a static final constant or non-public and provide accessors if needed.(Îì¾
+‰"squid:ClassVariableVisibilityCheck"XMake signUpButton a static final constant or non-public and provide accessors if needed.(Í‚îòüÿÿÿÿ
